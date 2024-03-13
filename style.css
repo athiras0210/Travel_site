@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar-nav {
+    margin-right: auto;
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+}
+
+.text-block {
+    right: 100px;
+    /* Adjust as needed */
+}
+
+#heading1,
+#heading2,
+#heading3 {
+    color: rgb(109, 104, 104);
+}
+
+#container1 {
+    background-color: #084f97;
+}
+
+#heading4 {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: whitesmoke;
+}
+
+.cb {
+    background-color: #00AEC7;
+    color: white;
+}
+
+.cb:hover {
+    background-color: black;
+    color: white;
+}
+
+#container2 {
+    background-color: rgb(239, 241, 242);
+}
+
+#para1 {
+    text-align: justify;
+}
+
+.list::before {
+    content: "•";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#ulid {
+    padding-left: 25px;
+}
+
+#division {
+    margin-left: 100px;
+}
+
+#guide {
+    text-align: justify;
+}
+
+#guideimg {
+    width: 100%;
+    height: 450px;
+}
+
+#heading8 {
+    text-align: justify;
+}
+
+#headingSmallScreen{
+    display: none;
+}
+
+#headingBigScreen{
+    display: block;
+}
+
+/* .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Add animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-card {
+    animation: slideIn 0.5s ease;
+}
+ .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+ }
+
+@media (max-width: 768px) {
+
+    #main {
+        width: 100%;
+        height: 200px;
+    }
+
+    ul.navbar-nav {
+        text-align: left;
+        /* Aligning the navigation links to the left */
+    }
+
+    ul.navbar-nav li.nav-item {
+        margin: 10px 0;
+        /* Adjusting margin to create space between links */
+    }
+
+    ul.navbar-nav li.nav-item h2#head {
+        margin: 0;
+        /* Removing margin for the heading */
+        font-size: 24px;
+        /* Adjusting font size for better readability */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .collapse.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    #heading1 {
+        font-size: 0.7rem;
+    }
+
+    #heading2 {
+        font-size: 0.6rem;
+    }
+
+    #heading3 {
+        font-size: 0.4rem;
+    }
+
+    #heading4 {
+        font-size: 0.9rem;
+        margin-top: 1px !important;
+    }
+
+    #fname {
+        margin-top: 1px !important;
+    }
+
+    #lname {
+        margin-top: 1px !important;
+    }
+
+    #tipbtn {
+        margin-top: 10px !important;
+    }
+
+    .text-block {
+        right: 10px;
+        /* Adjust as needed */
+    }
+
+
+    .form-control {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+        height: calc(1.5em + 0.4rem + 2px);
+        width: 70%;
+        /* Adjust the width as needed */
+    }
+
+    #ulid {
+        padding-left: 25px;
+    }
+
+    #division {
+        margin-left: 0px;
+    }
+
+    #images img {
+        width: 50px;
+    }
+
+    #guideimg {
+        width: 100%;
+        height: 350px !important;
+    }
+
+    #divider {
+        width: 300px;
+    }
+
+    #guide2 {
+        width: 250px;
+        height: 300px !important;
+    }
+
+    #travelimg {
+        width: 350px;
+        height: 290px;
+    }
+
+}
+
+@media (max-width:992px) {
+    
+#headingSmallScreen{
+    display: block;
+    margin-bottom: 0px !important;
+}
+
+#headingSmallScreen h2{
+    margin-bottom: 0px !important;
+}
+
+#headingBigScreen{
+    display: none;
+}
+}
+

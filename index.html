@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Traveler’s Diary</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="https://www.pngmart.com/files/17/Travel-Icon-PNG-Photos.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&faqmily=Croissant+One&family=Dancing+Script:wght@400;600;700&family=Inclusive+Sans&family=Jost:wght@300&family=Lobster&family=Merriweather+Sans&family=Playfair+Display:ital,wght@0,700;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3A93B2; ">
+        <div class="container">
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <img src="https://clipart-library.com/images_k/globe-transparent-png/globe-transparent-png-22.png"
+                    width="30px" alt="">
+            </a>
+            <a id="headingSmallScreen" class="text-center text-light text-decoration-none">
+                <h2 id="head">A Traveler’s Diary</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <ul id="headingBigScreen" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="text-center text-light text-decoration-none">
+                            <h2 id="head">A Traveler’s Diary</h2>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-light">
+                    <li><a href="#main" class="text-decoration-none text-light">Home</a></li>
+                    <li><a href="#heading5" class="text-decoration-none text-light">Blogs</a></li>
+                    <li><a href="#container2" class="text-decoration-none text-light">About</a></li>
+                    <li><a href="#traveltips" class="text-decoration-none text-light">Travel Tips</a></li>
+                    <li><a href="#destination" class="text-decoration-none text-light">Destinations</a></li>
+                    <li><a href="#resources" class="text-decoration-none text-light">Resources</a></li>
+                    <li><a href="#community" class="text-decoration-none text-light">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative" style="padding-left: 0 !important; padding-right: 0 !important;">
+        <video src="./images/video.mp4" autoplay muted style="width: 100%;"></video>
+        <!-- <img id="main" src="./images/main.jpeg" alt="" class="img-fluid w-100"> -->
+        <div class="text-block position-absolute top-50 translate-middle-y text-end">
+            <h1 id="heading1" class="text-center text-light">Travel Smarter, Cheaper, Longer</h1>
+            <h3 id="heading2" class="text-center text-light">Where do you want to go?</h3>
+            <div class="input-group mb-3">
+                <input class="form-control text-center border-1 border-dark" id="searchinput" type="text"
+                    placeholder="Find Your Destination" aria-label="Search">
+            </div>
+            <h5 class="text-center text-light" id="heading3"><span>Popular Searches</span>: <span>Southeast</span>,
+                <span>Asia</span>,
+                <span>Europe</span>, <span>travel hacking</span>, <span>insurance</span>, <span>Paris</span>
+            </h5>
+        </div>
+    </div>
+
+
+    <div id="container1" class="container-fluid row mx-auto">
+        <h5 class="col-sm-4 col-12 mt-2" id="heading4">GET MY BEST TIPS SENT
+            <br>
+            STRAIGHT TO YOU
+        </h5>
+        <div class="col-sm-2 col-6 mt-4" id="fname">
+            <input type="text" class="form-control bggrey" id="firstname" placeholder="First Name">
+        </div>
+        <div class="col-sm-2 col-6 mt-4" id="lname">
+            <input type="text" class="form-control bggrey" id="lastname" placeholder="Last Name">
+        </div>
+        <div class="col-sm-3 col-12 mt-4 mb-2" id="tipbtn">
+            <button class="btn btn-md btn-success w-100">Send Me Tips</button>
+        </div>
+    </div>
+
+
+
+    <h2 id="heading5" class="text-center mt-5 md-5">Latest from the Blog</h2>
+    <div class="row row-cols-1 row-cols-md-3 m-3">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="card-img-top img_card"
+                    alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title ctt">Cuban Nightlife: The Secrets Of Havana's Vibrant After-Hours</h5>
+                    <p class="card-text ct">Cuba is renowned for its vibrant and captivating nightlife, with Havana
+                        being the undisputed epicenter of this mesmerizing scene. The allure of Cuban nightlife is
+                        irresistible, drawing night owls from...</p>
+                    <a href="https://www.pilotplans.com/blog/cuba-nightlife" class="btn cb" target="_blank">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="https://idsb.tmgrup.com.tr/2015/11/21/1448046628428.jpg" class="card-img-top img_card"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ctt">The Ultimate Istanbul Coffee Guide: Sip Your Way Through</h5>
+                    <p class="card-text ct">Welcome to our Istanbul Coffee Guide, where I will take you on a journey
+                        through the vibrant and unique coffee culture of this enchanting city.Istanbul Turkey (Turkiye),
+                        the enchanting meeting point of Europe... </p>
+                    <a href="https://www.pilotplans.com/blog/istanbul-nightlife" target="_blank" class="btn cb">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="https://www.newsnetnow.com/wp-content/uploads/2020/03/MANALI.jpg"
+                    class="card-img-top img_card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ctt">The Magic of Minimalist Travel: Less is More and more is less</h5>
+                    <p class="card-text ct">In a world brimming with excess, minimalist travel emerges as a refreshing
+                        approach to exploring the globe. Rooted in simplicity and mindful living, minimalist travel
+                        embodies the idea of experiencing...</p>
+                    <a href="https://www.pilotplans.com/blog/exodus-travels-review" target="_blank" class="btn cb">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 m-3">
+        <div class="col mb-4">
+            <div class="card shadow">
+                <img src="https://media.timeout.com/images/105463981/image.jpg" class="card-img-top img_card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ctt">The Best 15 Landmarks in Milan: Skylines and Storylines</h5>
+                    <p class="card-text ct">Italy has always been one of my favorite places to visit, with its rich
+                        history, delicious food, and vibrant people. This time, I want to take you back to Milan, where
+                        we can explore...</p>
+                    <a href="https://www.pilotplans.com/locations/milan" target="_blank" class="btn cb">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card shadow">
+                <img src="https://wallpaperaccess.com/full/1642751.jpg" class="card-img-top img_card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ctt">Mindful Travel: Discovering The World Through A New Lens</h5>
+                    <p class="card-text ct">Are you ready to embark on a journey that will not only take you to
+                        breathtaking destinations but also nurture your soul along the way? Embark on a mindful travel
+                        journey...</p>
+                    <a href="https://www.pilotplans.com/blog/calm-review" target="_blank" class="btn cb">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card shadow">
+                <img src="./images/carnival.webp" class="card-img-top img_card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ctt">Everything You Need To Know About Venice Carnival: FAQs Inside!</h5>
+                    <p class="card-text ct">Are you curious about the world-famous Venice Carnival 2024 and the numerous
+                        inquiries it often attracts? From the history behind this enchanting event to the details of carnival...</p>
+                    <a href="https://www.pilotplans.com/blog/carnival-of-venice" target="_blank" class="btn cb">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-light btn-lg border border-2 text-dark">View More >></button>
+    </div>
+
+    <div class="container-fluid mt-5" id="container2">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 text-center">
+                <h4 class="text mt-5">About Ajay Sood</h4>
+                <img src="./images/Ajay-Sood-Indian-Travel-Bloggers-768x512.jpg.webp" class="img-fluid" alt="">
+                <div>
+                    <p id="para1">Welcome! Every day I wake up with one goal in mind: “How can I help other people
+                        travel
+                        better for less?”
+                        It’s my mission now to help travelers like you to realize their travel dreams. <br><br>
+                        Since 2008, I’ve helped millions of people save money, travel more, and have a more authentic
+                        experience
+                        in the destinations they visit. <br><br>
+                        This website has been featured in major media time and time again because it’s got the best
+                        budget
+                        advice out there. My goal is to make you a smarter traveler so you can go where you want, as
+                        often
+                        as
+                        they want. <br><br>
+                        <a href="https://www.travelure.in/ajay-sood-travelure-pro-travel-photographer/" target="_blank"
+                            class="text text-decoration-none">Learn More About My Story>></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <h4 class="text mt-5">Start Planning Your Trip</h4>
+                <div class="text-center" id="division">
+                    <div class="text-center ml-5"> <!-- Wrap the <ul> in a <div> with class text-center -->
+                        <ul id="ulid" class="text text-dark list-unstyled mx-auto mt-4" style="text-align: justify;">
+                            <!-- Add mx-auto class here -->
+                            <li class="list mt-2"> &nbsp;How to Find Cheap Flights</li>
+                            <li class="list mt-2"> &nbsp;How to Find Cheap Accommodation</li>
+                            <li class="list mt-2"> &nbsp;How to Choose a Backpack</li>
+                            <li class="list mt-2"> &nbsp;17 Steps for Planning a Trip</li>
+                            <li class="list mt-2"> &nbsp;My Ultimate Packing Guide</li>
+                            <li class="list mt-2"> &nbsp;How to Buy Travel Insurance</li>
+                            <li class="list mt-2"> &nbsp;11 Tips for New Travelers</li>
+                            <li class="list mt-2"> &nbsp;My Favorite Hostels</li>
+                            <li class="list mt-2"> &nbsp;Solo Female Travel Tips</li>
+                            <li class="list mt-2"> &nbsp;How to Pick the Right Travel Credit Card</li>
+                            <li class="list mt-2"> &nbsp;14 Travel Scams to Avoid</li>
+                            <li class="list mt-2"> &nbsp;15 Ways to Work Overseas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text mt-5 mx-3">
+                    <h5>My Advice Has Been Featured In:</h5>
+                    <div class="row mt-4" id="images">
+                        <div class="col-2"></div>
+                        <div class="col-2 m-1">
+                            <img id="img1"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58Z55P_Xjo8m9LQBWAQ25Dx1iirIM0H0ZSw&usqp=CAU"
+                                width="70px" alt="">
+                        </div>
+                        <div class="col-2 m-1">
+                            <img id="img2"
+                                src="data:image/png;base64,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"
+                                width="90px" alt="">
+                        </div>
+                        <div class="col-2 m-1">
+                            <img id="img3"
+                                src="https://logos-world.net/wp-content/uploads/2023/01/The-Wall-Street-Journal-Symbol.png"
+                                width="60px" alt="">
+                        </div>
+                        <div class="col-2 m-1">
+                            <img id="img4"
+                                src="data:image/png;base64,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"
+                                width="90px" alt="">
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+    <div id="traveltips" class="container-fluid">
+        <h2 id="heading6" class="text-center mt-5 md-5">Books & Guides</h2>
+        <div class="row mt-4 mx-0">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-6 col-md-6">
+                <h5 id="heading7">Journey's of A Lifetime</h5>
+                <p>Who doesn’t love to travel and to dream of where you want to go? Journeys Of A Lifetime is one giant
+                    coffee table book. The cover of this hefty tome is Neuschwanstein Castle in Germany. Inside are 500
+                    of the world’s greatest trips sectioned by water, rail, road, foot, by food, etc. Each section has
+                    the stunning photography that National Geographic is known for. Included also, are different trip
+                    routes you can take.
+                    <br><br>
+                    Getting to review this lovely book it reminded me of different places and experiences I’d like to
+                    have some day. One thing I’ve wanted to do since childhood is cage dive to see Great Whites. In
+                    fourth grade I wrote a short story about a Great White. A place I’ve wanted to go visit since grade
+                    school is Poland. I’m not Polish, but after reading a children’s book based on World War II I’ve
+                    wanted to go visit it. I find their language sounds like music.
+                    <br><br>
+                    I received a complimentary copy of National Geographic’s Second Edition Journeys Of A Lifetime from
+                    TLC Book Tours. The views expressed in this review are my own. To go grab a copy for your home help
+                    support National Geographic.
+                </p>
+                <a href="https://www.amazon.in/Journeys-Lifetime-Second-Worlds-Greatest-ebook/dp/B079DCTRBC/ref=sr_1_6?adgrpid=1327112143838781&dib=eyJ2IjoiMSJ9.KKUvSRKyqNCQI4Rskbx5e0T9qFXeb6V0WK0FM3v1t0S3xVXSrDPao4OORSKqsIumiKK9fM684RHeQnrzfYAHI2a9muTn0KNsHh5dX1JdQ8bZMFMb-SZQSABAjTB0pJIQwva0o4ggV_wegqUMmM8UJn8XcBg7J0KfV_wcwKR02TZ_itIb9ir31t-nweZb-0N6W5a3MlrWMt4Zyg5jHyCA9Xq7Lf9Wdii18BBv7boRGc4.rtf7m2_RTmrg7MYNvyWYFxqonz4cYgiUkpr-T_r5C6w&dib_tag=se&hvadid=82944767856019&hvbmt=be&hvdev=c&hvlocphy=149619&hvnetw=o&hvqmt=e&hvtargid=kwd-82945388298090%3Aloc-90&hydadcr=24266_1926305&keywords=journeys+of+a+lifetime+book&qid=1709547649&s=books&sr=1-6"
+                    target="_blank" class="text text-decoration-none">Find out more and pick up a copy today!</a>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                <img id="guideimg" src="./images/book.webp" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+    </div>
+
+    <div class="row mt-4 mx-0">
+        <div class="col-1"></div>
+        <div class="col-10 mt-3 mb-3">
+            <img id="divider" src="./images/blog_divider_735x40_@2x.webp" width="1100px" alt="">
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="row mx-0" id="destination">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-5 col-md-5">
+            <img class="m-2 img-fluid" src="./images/book1.webp" alt="" style="width:150px; height:210px;">
+            <img class="m-2 img-fluid" src="./images/book2.webp" alt="" style="width:150px; height:210px;">
+            <img class="m-2 img-fluid" src="./images/book3.webp" alt="" style="width:150px; height:210px;">
+            <img class="m-2 img-fluid" src="./images/book4.webp" alt="" style="width:150px; height:210px;">
+            <img class="m-2 img-fluid" src="./images/book5.webp" alt="" style="width:150px; height:210px;">
+            <img class="m-2 img-fluid" src="./images/book6.jpg" alt="" style="width:150px; height:210px;">
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <h5 id="heading8" class="mt-md-5">Destination Guide Books</h5>
+            <p class="m-1 mt-2">I've written a few destination guidebooks that will help you travel cheaper, better, and
+                smarter. Unlike
+                other guidebooks, these are specifically written for budget travelers! They contain detailed tips,
+                advice, and insider information so you can get off the beaten path, away from the crowds, and save money
+                when you travel! Straight to the point, no fluff!</p>
+            <a href="https://www.amazon.in/s?k=travel+books&crid=1DA6B3GUWHN6N&sprefix=travel+books%2Caps%2C241&ref=nb_sb_noss_1"
+                target="_blank" class="text text-decoration-none text-justify">Check them out today and get one for your
+                next
+                trip!</a>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+
+    <div class="row mt-4 mx-0">
+        <div class="col-1"></div>
+        <div class="col-10 mt-3 mb-3">
+            <img id="divider" src="./images/blog_divider_735x40_@2x.webp" width="1100px" alt="">
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div id="resources" class="container-fluid">
+        <h2 id="heading6" class="text-center mt-5 md-5">Books & Guides</h2>
+        <div class="row mt-4 mx-0">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-6 col-md-6">
+                <h5 id="heading7">Remember Your Trvels</h5>
+                <p style="text-align: justify;">This new travel-themed journal features guided prompts to help you
+                    remember everything you experience
+                    on the road, as well as quotes to keep you inspired along the way. It also includes pre- and
+                    post-trip sections, so you can set your intentions before you actually record your experiences, and
+                    then reflect on everything. I designed the journal to be as straightforward and streamlined as
+                    possible so that you can remember all those incredible moments you experience on the road.
+                </p>
+                <a href="https://www.amazon.in/s?k=travel+books&crid=1DA6B3GUWHN6N&sprefix=travel+books%2Caps%2C241&ref=nb_sb_noss_1"
+                    target="_blank" class="text text-decoration-none">Buy Your Copy Today</a>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                <img id="guide2" src="./images/traveljournal.jpg" width="290px" height="300px" class="img-fluid mt-2"
+                    alt="">
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+    </div>
+
+
+    <div class="row mt-4 mx-0">
+        <div class="col-1"></div>
+        <div class="col-10 mt-3 mb-3">
+            <img id="divider" src="./images/blog_divider_735x40_@2x.webp" width="1100px" alt="">
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="row mx-0 mb-3" id="community">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-5 col-md-5">
+            <img id="travelimg" class="m-2 img-fluid" width="450px" height="400px" src="./images/traveltogether.jpg"
+                alt="">
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <h5 id="heading8" class="mt-md-5">Come Travel The World With Us!</h5>
+            <p class="m-1 mt-2">Want to explore some of my favorite destinations around the world with me? The Nomadic
+                Network is our
+                travel community with unending wanderlust, so we’re always ready to hit the road. TNN organizes unique
+                group tours designed for travelers that want to get off the beaten path and gain a deeper understanding
+                of the places they visit. If this sounds like you, join us on a tour for the adventure of a lifetime!
+            </p>
+            <a href="#" target="_blank" class="text text-decoration-none text-justify">See all our tours and sign up
+                today!</a>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+
+    <div id="container1" class="container-fluid row mx-auto">
+        <h5 class="col-sm-4 col-12 mt-2" id="heading4">GET MY BEST TIPS SENT
+            <br>
+            STRAIGHT TO YOU
+        </h5>
+        <div class="col-sm-2 col-6 mt-4" id="fname">
+            <input type="text" class="form-control bggrey" id="firstname" placeholder="First Name">
+        </div>
+        <div class="col-sm-2 col-6 mt-4" id="lname">
+            <input type="text" class="form-control bggrey" id="lastname" placeholder="Last Name">
+        </div>
+        <div class="col-sm-3 col-12 mt-4 mb-2" id="tipbtn">
+            <button class="btn btn-md btn-success w-100">Send Me Tips</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mx-0" style="background-color: #3A93B2;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block text-light">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f text-light"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter text-light"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google text-light"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram text-light"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin text-light"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github text-light"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">About Us
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">About Ajay Sood</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Meet The Team</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Write For Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">copy Right</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Privacy Policy</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            Travel Tips
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Start Here</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Travel Blog</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Destination Guides</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Travel credit Cards</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            Book Your Trip
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Accomodation</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Cheap Flights</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Travel Insurance</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Favourite Hotels</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Favourite Neighborhoods</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none text-light">Favourite Companies</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+                        <p class="text-light"><i class="fas fa-home me-3 text-secondary text-light"></i> New York, NY
+                            10012, US</p>
+                        <p class="text-light">
+                            <i class="fas fa-envelope me-3 text-secondary text-light"></i>
+                            travellersdiary@example.com
+                        </p>
+                        <p class="text-light"><i class="fas fa-phone me-3 text-secondary text-light"></i> + 01 234 567
+                            88</p>
+                        <p class="text-light"><i class="fas fa-print me-3 text-secondary text-light"></i> + 01 234 567
+                            89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.030);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold text-light" href="#">travellersdiary@example.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
